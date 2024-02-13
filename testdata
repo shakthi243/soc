@@ -1,0 +1,168 @@
+"formattedEvents": [
+        {
+            "class": "com.securonix.application.snyper.spotter.util.SpEntry",
+            "dateAttributes": {
+                "week": "31",
+                "month": "8",
+                "hour": "19",
+                "year": "2023",
+                "dayofweek": "5",
+                "categorizedtime": "Late Evening",
+                "dayofyear": "215",
+                "dayofmonth": "3"
+            },
+            "eventTimeField": "eventtime",
+            "eventime": "2023-08-03 19:20:50",
+            "eventtimelong": 1691076050000,
+            "eventtype": null,
+            "functionality": "microsoft windows",
+            "masked": false,
+            "policyid": null,
+            "rgid": 224,
+            "sectionList": [
+                {
+                    "class": "com.securonix.application.snyper.spotter.util.SpSection",
+                    "sectionMap": {
+                        "accountname": "violateduser",
+                        "destinationprocessname": "NtLmSsp",
+                        "destinationservicename": "NtLmSsp",
+                        "eventoutcome": "Failure",
+                        "message": "An account failed to log on.",
+                        "sourceprocessname": "-",
+                        "transactionstring1": "Windows-Events",
+                        "ipaddress": "1.1.1.1",
+                        "sourceaddress": "1.1.1.1",
+                        "sourcehostname": "Desktop123",
+                        "sourcentdomain": "-",
+                        "sourceport": 52012,
+                        "destinationuserid": "NULL SID",
+                        "destinationusername": "violateduser",
+                        "devicehostname": "server123",
+                        "resourcegroupid": 224,
+                        "resourcegroupname": "WINDOWS SECURITY SNARE",
+                        "devicecustomstring4": "NTLM",
+                        "devicecustomstring6": "Username correct but password incorrect",
+                        "resourcecustomfield4": "0xC000006D",
+                        "resourcecustomfield5": "0xC000006A",
+                        "resourcename": "Desktop123",
+                        "resourcetype": "Microsoft Windows SNARE",
+                        "sourceuserid": "NULL SID",
+                        "sourceusername": "-",
+                        "baseeventid": "4625",
+                        "sessionid": "0x0",
+                        "destinationntdomain": "TEST",
+                        "filepath": "-",
+                        "oldfileid": "0x0",
+                        "oldfilepath": "-",
+                        "customnumber1": 3.0,
+                        "customnumber3": 15.0,
+                        "customnumber4": 0.0,
+                        "customstring13": "Network logon",
+                        "customstring32": "This event is generated when a logon request fails. It is generated on the computer where access was attempted. The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe. The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network). The Process Information fields indicate which account and process on the system requested the logon. The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases. The authentication information fields provide detailed information about this specific logon request. - Transited services indicate which intermediate services have participated in this logon request. - Package name indicates which sub-protocol was used among the NTLM protocols. - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",
+                        "customstring34": "-",
+                        "customstring40": "-",
+                        "customstring43": "NtLmSsp",
+                        "customstring44": "NtLmSsp",
+                        "customstring45": "NtLmSsp",
+                        "customstring46": "NtLmSsp",
+                        "customstring47": "-",
+                        "customstring48": "-",
+                        "customstring49": "-",
+                        "customstring50": "-",
+                        "customstring52": "NtLmSsp",
+                        "customstring53": "NtLmSsp",
+                        "customstring54": "-",
+                        "customstring55": "NtLmSsp",
+                        "customstring6": "Unknown user name or bad password.",
+                        "customstring61": "Security",
+                        "invalid": "false",
+                        "categorybehavior": "Logon",
+                        "categoryobject": "Authentication",
+                        "categoryoutcome": "Failure",
+                        "categoryseverity": "0",
+                        "deviceeventcategory": "Logon"
+                    },
+                    "sectionName": "Event"
+                },
+                {
+                    "class": "com.securonix.application.snyper.spotter.util.SpSection",
+                    "sectionMap": {
+                        "category": "Credential Access",
+                        "policyid": 1877,
+                        "policyname": "Potential Password Spraying Peak Logon Failure For High Distinct Destination Compared To Peers Analytic - FAB",
+                        "riskthreatname": "Password Spraying",
+                        "violator": "RTActivityAccount"
+                    },
+                    "sectionName": "Violation"
+                },
+                {
+                    "class": "com.securonix.application.snyper.spotter.util.SpSection",
+                    "sectionMap": {
+                        "country": "Hong Kong",
+                        "createdate": "2023-05-28 14:26:07",
+                        "department": "Information Technology",
+                        "employeeid": "1234",
+                        "employeetype": "Employee",
+                        "firstname": "Firstname",
+                        "hiredate": "2021-04-29 00:00:00",
+                        "lastname": "Lastname",
+                        "location": "Hongkong",
+                        "status": 1,
+                        "statusdescription": "Active",
+                        "workemail": "abc@abc.com"
+                    },
+                    "sectionName": "Identity"
+                },
+                {
+                    "class": "com.securonix.application.snyper.spotter.util.SpSection",
+                    "sectionMap": {
+                        "criticality": "Low",
+                        "tenantname": "Securonix"
+                    },
+                    "sectionName": "Index"
+                },
+                {
+                    "class": "com.securonix.application.snyper.spotter.util.SpSection",
+                    "sectionMap": {
+                        "eventid": "94148eb2-b6d7-4c22-a0b5-4fa58c82b992",
+                        "formatteddate": "2023-07-30 00:00:00",
+                        "fullname": "Firstname Lastname",
+                        "generationtime": "2023-08-04 00:03:34",
+                        "publishedtime": "2023-08-03 19:20:12",
+                        "receivedtime": "2023-08-03 20:12:55",
+                        "risktypeid": 3733,
+                        "u_statusdescription::08/23/2023 16:20:01": "Active User",
+                        "u_statusdescription::08/23/2023 21:37:01": "Active",
+                        "u_statusdescription::09/11/2023 16:21:01": "Active User",
+                        "u_statusdescription::09/12/2023 04:21:01": "Active",
+                        "u_statusdescription::09/12/2023 11:05:01": "Active User",
+                        "u_statusdescription::09/13/2023 04:28:01": "Active"
+                    },
+                    "sectionName": "Other"
+                },
+                {
+                    "class": "com.securonix.application.snyper.spotter.util.SpSection",
+                    "sectionMap": {
+                        "usercriticality": "Low",
+                        "customfield4": "violateduser",
+                        "updatedate": "2023-09-13 04:28:01",
+                        "usertimezoneoffset": "Asia/Dubai",
+                        "others": "additionaldetails12=violateduser|additionaldetails13=0xC000006A|additionaldetails19=-|additionaldetails20=NtLmSsp",
+                        "contractstartdate": "2021-04-29 00:00:00",
+                        "city": "Hongkong",
+                        "lastsynctime": "2023-09-13 04:31:34",
+                        "managerfirstname": "manager",
+                        "userriskscore": 0.01
+                    },
+                    "sectionName": "UNINDEXED"
+                },
+                {
+                    "class": "com.securonix.application.snyper.spotter.util.SpSection",
+                    "sectionMap": {
+                        "rawevent": "Aug  3 23:20:50 server123 MSWinEventLog\t3\tSecurity\t6388151\tThu Aug 03 23:20:50 2023\t4625\tMicrosoft-Windows-Security-Auditing\tN/A\tN/A\tFailure Audit\tserver123\tLogon\t\tAn account failed to log on.    Subject:   Security ID:  NULL SID   Account Name:  -   Account Domain:  -   Logon ID:  0x0    Logon Type:   3    Account For Which Logon Failed:   Security ID:  NULL SID   Account Name:  violateduser   Account Domain:  TEST    Failure Information:   Failure Reason:  Unknown user name or bad password.   Status:   0xC000006D   Sub Status:  0xC000006A    Process Information:   Caller Process ID: 0x0   Caller Process Name: -    Network Information:   Workstation Name: Desktop123   Source Network Address: 1.1.1.1   Source Port:  52012    Detailed Authentication Information:   Logon Process:  NtLmSsp    Authentication Package: NTLM   Transited Services: -   Package Name (NTLM only): -   Key Length:  0    This event is generated when a logon request fails. It is generated on the computer where access was attempted.    The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.    The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).    The Process Information fields indicate which account and process on the system requested the logon.    The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.    The authentication information fields provide detailed information about this specific logon request.   - Transited services indicate which intermediate services have participated in this logon request.   - Package name indicates which sub-protocol was used among the NTLM protocols.   - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.\t344124010"
+                    },
+                    "sectionName": "sec_rawevent"
+                }
+            ],
+            "showExpanded": true
+        }
